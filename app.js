@@ -3,7 +3,7 @@ const bodyparser = require('body-parser');
 
 const app = express();
 const time =require(__dirname + "/time.js");
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 
 
 
