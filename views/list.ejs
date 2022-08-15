@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/style.css">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+  <body >
+
+    <div class="boxx">
+      <div class="h1">
+        <h1><%= DATEE %> <%= dayss %>day. <%= timess %> </h1>
+        
+            <% for(i = 0 ; i < NEWW.length; i++){ %> 
+
+              <%  if(i%2 == 0){ %>
+              <div class="combine">
+              <input class="li" type="checkbox">
+              <p><%= NEWW[i] %> </p></div>
+              <%  }else{%>
+                <div class="combine2">
+                <input class="li" type="checkbox">
+                <p><%= NEWW[i] %>  </p></div>
+
+            <% } %> 
+            <% } %> 
+
+
+      </div>
+
+      <div class ="list">
+        <form action="/" method="POST">
+          <input type="text" name="new" class=" imput" placeholder='  new list'>  
+          <button type="submit" name="button" class="btn" >add</button>
+
+        </form>
+        <form action="/x" method="POST">
+        <button class="btn1" >clear</button></form>
+      </div>
+
+        
+
+        <script src="" async defer></script>
+     </div>
+    </body>
+
+</html>
