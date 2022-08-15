@@ -3,6 +3,8 @@ const bodyparser = require('body-parser');
 
 const app = express();
 const time =require(__dirname + "/time.js");
+const PORT = process.env.PORT;
+
 
 
 app.use(bodyparser.urlencoded({extended: true}));
@@ -58,4 +60,4 @@ app.post("/x",function(req,res){
   
 
 
-app.listen(3000,function(){ console.log("server is live.")});
+app.listen(PORT,function(){ console.log("server is live.")});
